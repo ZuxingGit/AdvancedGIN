@@ -1,0 +1,7 @@
+Initial execution time: 1291021.5 (ns) 
+Step 524 | MOVE 10 -> 4:0 |*** New best *** Time: 1289408.0(ns)
+Step 719 | MOVE 10 -> 4:0 | COPY 2 -> 5:0 |*** New best *** Time: 1282948.0(ns)
+Step 731 | MOVE 10 -> 4:0 |*** New best *** Time: 1242686.0(ns)
+Step 893 | MOVE 10 -> 4:0 | MOVE 12 -> 5:0 |*** New best *** Time: 1226723.0(ns)
+Step 900 | MOVE 12 -> 5:0 |*** New best *** Time: 1222339.0(ns)
+Step 984 | MOVE 12 -> 5:0 | DEL 14 |*** New best *** Time: 1196668.0(ns)

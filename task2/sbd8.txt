@@ -1,0 +1,5 @@
+Initial execution time: 1273513.0 (ns) 
+Step 358 | DEL 12 |*** New best *** Time: 1258267.0(ns)
+Step 845 | DEL 12 | COPY 17 -> 5:0 |*** New best *** Time: 1242533.0(ns)
+Step 930 | DEL 12 |*** New best *** Time: 1189963.0(ns)
+Step 932 | DEL 12 | DEL 16 |*** New best *** Time: 1188854.0(ns)
