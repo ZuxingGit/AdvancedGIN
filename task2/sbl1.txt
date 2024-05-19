@@ -1,0 +1,8 @@
+Initial execution time: 5364707.0 (ns) 
+Step 743 | COPY 4 -> 1:0 |*** New best *** Time: 3625779.0(ns)
+Step 748 |*** New best *** Time: 3577162.0(ns)
+Step 752 | COPY 5 -> 1:0 |*** New best *** Time: 3509479.0(ns)
+Step 754 |*** New best *** Time: 3248755.0(ns)
+Step 759 | COPY 6 -> 3:0 |*** New best *** Time: 3023800.0(ns)
+Step 803 |*** New best *** Time: 2875719.0(ns)
+Step 855 | COPY 6 -> 3:0 |*** New best *** Time: 2801123.0(ns)
