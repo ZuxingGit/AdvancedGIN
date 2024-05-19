@@ -1,0 +1,7 @@
+Step 2 | DEL 8 |*** New best *** Time: 3157049.0(ns)
+Step 158 | DEL 8 | MOVE 7 -> 2:1 |*** New best *** Time: 1313011.0(ns)
+Step 159 | DEL 8 |*** New best *** Time: 732713.0(ns)
+Step 390 | DEL 8 | COPY 8 -> 2:0 |*** New best *** Time: 702167.0(ns)
+Step 393 | DEL 8 |*** New best *** Time: 609864.0(ns)
+Step 774 | DEL 8 | MOVE 1 -> 0:1 |*** New best *** Time: 545322.0(ns)
+Step 897 | DEL 8 |*** New best *** Time: 535223.0(ns)
