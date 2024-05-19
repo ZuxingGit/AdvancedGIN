@@ -1,0 +1,1 @@
+Initial execution time: 5126189.5 (ns) 

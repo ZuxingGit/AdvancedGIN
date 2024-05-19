@@ -1,0 +1,5 @@
+Initial execution time: 7374791.75 (ns) 
+Step 17 | COPY 2 -> 0:2 |*** New best *** Time: 7057303.0(ns)
+Step 19 |*** New best *** Time: 6365984.0(ns)
+Step 31 | DEL 22 |*** New best *** Time: 6251733.0(ns)
+Step 73 |*** New best *** Time: 5832353.0(ns)

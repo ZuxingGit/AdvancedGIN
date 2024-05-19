@@ -1,0 +1,3 @@
+Initial execution time: 5016280.0 (ns) 
+Step 148 | MOVE 24 -> 6:0 |*** New best *** Time: 4948936.0(ns)
+Step 151 |*** New best *** Time: 4829513.0(ns)
