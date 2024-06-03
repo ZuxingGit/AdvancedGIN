@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gin.PatchTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-06-03T02:13:24" hostname="ZuxingMac.local" time="0.053">
+  <properties/>
+  <testcase name="testClone" classname="gin.PatchTest" time="0.003"/>
+  <testcase name="testToString" classname="gin.PatchTest" time="0.006"/>
+  <testcase name="remove" classname="gin.PatchTest" time="0.004"/>
+  <testcase name="add" classname="gin.PatchTest" time="0.002"/>
+  <testcase name="size" classname="gin.PatchTest" time="0.004"/>
+  <testcase name="apply" classname="gin.PatchTest" time="0.01"/>
+  <testcase name="addRandomEdit" classname="gin.PatchTest" time="0.012"/>
+  <testcase name="writePatchedSourceToFile" classname="gin.PatchTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

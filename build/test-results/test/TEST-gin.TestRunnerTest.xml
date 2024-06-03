@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gin.TestRunnerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-06-03T02:13:23" hostname="ZuxingMac.local" time="1.03">
+  <properties/>
+  <testcase name="copySource" classname="gin.TestRunnerTest" time="0.36"/>
+  <testcase name="ensureDirectory" classname="gin.TestRunnerTest" time="0.048"/>
+  <testcase name="compile" classname="gin.TestRunnerTest" time="0.612"/>
+  <testcase name="testRunner" classname="gin.TestRunnerTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
