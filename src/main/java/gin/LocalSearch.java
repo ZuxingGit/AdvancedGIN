@@ -2,13 +2,15 @@ package gin;
 
 import java.util.Random;
 
+import gin.automation.run5JavaFiles;
+
 /**
  * Simple local search.
  */
 public class LocalSearch {
 
     private static final int seed = 5678;
-    private static final int NUM_STEPS = 1000;
+    private static final int NUM_STEPS = 100;
     private static final int WARMUP_REPS = 10;
 
     protected SourceFile sourceFile;
@@ -22,11 +24,12 @@ public class LocalSearch {
     public static void main(String[] args) {
 
         if (args.length == 0) {
-
+            System.out.println("Location: "+ run5JavaFiles.getParentDir());
             System.out.println("Please specify a source file to optimise.");
-
+            
         } else {
-
+            System.out.println("Location: "+ run5JavaFiles.getParentDir());
+            
             String sourceFilename = args[0];
             System.out.println("Optimising source file: " + sourceFilename + "\n");
 

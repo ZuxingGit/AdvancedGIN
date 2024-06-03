@@ -20,12 +20,6 @@ public class SortCocktail {
                     a[i + 1] = temp;
                     swapped = true;
                 }
-                if (a[i] > a[i + 1]) {
-                    int temp = a[i];
-                    a[i] = a[i + 1];
-                    a[i + 1] = temp;
-                    swapped = true;
-                }
             }
             if (!swapped) {
                 break;

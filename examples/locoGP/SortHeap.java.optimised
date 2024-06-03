@@ -20,6 +20,7 @@ public class SortHeap {
                     a[root] = a[maxchild];
                     a[maxchild] = temp;
                 } else {
+                    break;
                 }
                 root = maxchild;
             }
