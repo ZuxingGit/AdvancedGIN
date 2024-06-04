@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 
-public class run5JavaFiles {
+public class Run5JavaFiles {
     /* 
     command sample:
     java -jar build/gin.jar examples/locoGP/SortCocktail.java | grep -E ".*(best|Initial)" > sc1.txt 
@@ -26,13 +26,10 @@ public class run5JavaFiles {
         "SortHeap.java"
     */
     // only run the first 4 files, SortHeap can cause program freeze
-    String[] files = {"SortBubbleDouble.java", 
-                        "SortBubbleLoops.java", 
-                        "SortInsertion.java", 
-                        "SortCocktail.java"};
+    String[] files = {"SortBubbleDouble.java"};
 
     public static void main(String[] args) {
-        new run5JavaFiles().runProgram();
+        new Run5JavaFiles().runProgram();
     }
 
     public void runProgram() {
@@ -71,9 +68,10 @@ public class run5JavaFiles {
                     e.printStackTrace();
                 }
             }
+            System.out.println("#####################################################");
         }
+        System.out.println("\nProgram finished running.");
         runtime.exit(0);
-        System.out.println(command); //useless
     }
 
     /**
