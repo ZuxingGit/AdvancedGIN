@@ -1,13 +1,27 @@
-Initial execution time: 2583146.0 (ns) 
-Step 16 | DEL 14 |*** New best *** Time: 2302407.0(ns)
-Step 24 |*** New best *** Time: 2257741.0(ns)
-Step 32 | DEL 12 |*** New best *** Time: 2132541.0(ns)
-Step 34 | DEL 12 | COPY 8 -> 6:0 |*** New best *** Time: 2116521.0(ns)
-Step 42 | DEL 12 |*** New best *** Time: 1968290.0(ns)
-Step 56 |*** New best *** Time: 1964848.0(ns)
-Step 92 | MOVE 3 -> 3:0 |*** New best *** Time: 1905044.0(ns)
+Initial execution time: 2347119.5 (ns) 
+Step 32 | MOVE 5 -> 3:0 |*** New best *** Time: 2240024.0(ns)
+Step 42 |*** New best *** Time: 2239794.0(ns)
+Step 51 | DEL 17 |*** New best *** Time: 2055089.0(ns)
+Step 52 |*** New best *** Time: 1996847.0(ns)
+Step 62 | DEL 12 |*** New best *** Time: 1985850.0(ns)
+Step 79 |*** New best *** Time: 1778872.0(ns)
+Step 92 | DEL 1 |*** New best *** Time: 1778189.0(ns)
+Step 114 | DEL 1 | COPY 8 -> 2:0 |*** New best *** Time: 1695819.0(ns)
+Step 117 | DEL 1 | COPY 8 -> 2:0 | COPY 0 -> 1:0 |*** New best *** Time: 1589742.0(ns)
+Step 122 | DEL 1 | COPY 8 -> 2:0 |*** New best *** Time: 1514739.0(ns)
+Step 132 | DEL 1 |*** New best *** Time: 1484942.0(ns)
+Step 140 | DEL 1 | MOVE 5 -> 3:1 |*** New best *** Time: 1481321.0(ns)
+Step 142 | DEL 1 |*** New best *** Time: 1383747.0(ns)
+Step 151 | DEL 1 | COPY 7 -> 2:0 |*** New best *** Time: 1369827.0(ns)
+Step 195 | DEL 1 | COPY 7 -> 2:0 | MOVE 9 -> 2:0 |*** New best *** Time: 1297839.0(ns)
+Step 316 | DEL 1 | COPY 7 -> 2:0 |*** New best *** Time: 935212.0(ns)
+Step 515 | DEL 1 |*** New best *** Time: 868416.0(ns)
+Step 528 | DEL 1 | COPY 9 -> 1:0 |*** New best *** Time: 844331.0(ns)
+Step 618 | DEL 1 | COPY 9 -> 1:0 | DEL 9 |*** New best *** Time: 839470.0(ns)
+Step 623 | DEL 1 | COPY 9 -> 1:0 |*** New best *** Time: 790887.0(ns)
+Step 839 | DEL 1 |*** New best *** Time: 783857.0(ns)
 
-Best patch found: | MOVE 3 -> 3:0 |
-Found at step: 92
-Best execution time: 1905044.0 (ns) 
-Speedup (%): 0.26251013299286996
+Best patch found: | DEL 1 |
+Found at step: 839
+Best execution time: 783857.0 (ns) 
+Speedup (%): 0.6660344733193175
