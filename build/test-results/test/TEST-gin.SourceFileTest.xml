@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gin.SourceFileTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-06-04T01:51:53" hostname="ZuxingMac.local" time="0.033">
+<testsuite name="gin.SourceFileTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-06-04T02:00:07" hostname="ZuxingMac.local" time="0.025">
   <properties/>
-  <testcase name="getStatementCount" classname="gin.SourceFileTest" time="0.005"/>
-  <testcase name="statementList" classname="gin.SourceFileTest" time="0.008"/>
-  <testcase name="getSource" classname="gin.SourceFileTest" time="0.005"/>
-  <testcase name="getNumberOfBlocks" classname="gin.SourceFileTest" time="0.004"/>
-  <testcase name="getFilename" classname="gin.SourceFileTest" time="0.003"/>
-  <testcase name="getCompilationUnit" classname="gin.SourceFileTest" time="0.004"/>
-  <testcase name="getNumberOfInsertionPointsInBlock" classname="gin.SourceFileTest" time="0.003"/>
+  <testcase name="getStatementCount" classname="gin.SourceFileTest" time="0.003"/>
+  <testcase name="statementList" classname="gin.SourceFileTest" time="0.007"/>
+  <testcase name="getSource" classname="gin.SourceFileTest" time="0.004"/>
+  <testcase name="getNumberOfBlocks" classname="gin.SourceFileTest" time="0.002"/>
+  <testcase name="getFilename" classname="gin.SourceFileTest" time="0.002"/>
+  <testcase name="getCompilationUnit" classname="gin.SourceFileTest" time="0.003"/>
+  <testcase name="getNumberOfInsertionPointsInBlock" classname="gin.SourceFileTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

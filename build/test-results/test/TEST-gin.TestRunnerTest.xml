@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gin.TestRunnerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-06-04T01:51:53" hostname="ZuxingMac.local" time="0.559">
+<testsuite name="gin.TestRunnerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-06-04T02:00:06" hostname="ZuxingMac.local" time="0.546">
   <properties/>
-  <testcase name="copySource" classname="gin.TestRunnerTest" time="0.181"/>
-  <testcase name="ensureDirectory" classname="gin.TestRunnerTest" time="0.005"/>
-  <testcase name="compile" classname="gin.TestRunnerTest" time="0.366"/>
-  <testcase name="testRunner" classname="gin.TestRunnerTest" time="0.007"/>
+  <testcase name="copySource" classname="gin.TestRunnerTest" time="0.182"/>
+  <testcase name="ensureDirectory" classname="gin.TestRunnerTest" time="0.006"/>
+  <testcase name="compile" classname="gin.TestRunnerTest" time="0.352"/>
+  <testcase name="testRunner" classname="gin.TestRunnerTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

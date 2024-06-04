@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gin.LocalSearchTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-04T01:51:53" hostname="ZuxingMac.local" time="0.014">
+<testsuite name="gin.LocalSearchTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-04T02:00:06" hostname="ZuxingMac.local" time="0.014">
   <properties/>
   <testcase name="neighbour" classname="gin.LocalSearchTest" time="0.009"/>
   <testcase name="localSearch" classname="gin.LocalSearchTest" time="0.005"/>
