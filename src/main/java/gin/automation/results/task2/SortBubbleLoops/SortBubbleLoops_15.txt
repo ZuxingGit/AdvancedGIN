@@ -1,0 +1,6 @@
+Initial execution time: 2058961.0 (ns) 
+
+Best patch found: |
+Found at step: 0
+Best execution time: 2058961.0 (ns) 
+Speedup (%): 0.0

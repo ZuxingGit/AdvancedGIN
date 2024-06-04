@@ -1,0 +1,13 @@
+Initial execution time: 7742943.5 (ns) 
+Step 2 | COPY 21 -> 0:2 |*** New best *** Time: 4373856.0(ns)
+Step 5 |*** New best *** Time: 3577550.0(ns)
+Step 17 | DEL 13 |*** New best *** Time: 3535989.0(ns)
+Step 21 |*** New best *** Time: 3067206.0(ns)
+Step 60 | DEL 12 |*** New best *** Time: 2881362.0(ns)
+Step 86 |*** New best *** Time: 2820515.0(ns)
+Step 99 | COPY 21 -> 5:2 |*** New best *** Time: 2654241.0(ns)
+
+Best patch found: | COPY 21 -> 5:2 |
+Found at step: 99
+Best execution time: 2654241.0 (ns) 
+Speedup (%): 0.6572051701010088

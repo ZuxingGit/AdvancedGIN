@@ -1,0 +1,11 @@
+Initial execution time: 2523308.25 (ns) 
+Step 6 | MOVE 9 -> 3:0 |*** New best *** Time: 2432796.0(ns)
+Step 12 |*** New best *** Time: 1884785.0(ns)
+Step 31 | MOVE 1 -> 0:1 |*** New best *** Time: 1751039.0(ns)
+Step 71 |*** New best *** Time: 1603729.0(ns)
+Step 84 | MOVE 3 -> 1:0 |*** New best *** Time: 1376149.0(ns)
+
+Best patch found: | MOVE 3 -> 1:0 |
+Found at step: 84
+Best execution time: 1376149.0 (ns) 
+Speedup (%): 0.45462509386239275
