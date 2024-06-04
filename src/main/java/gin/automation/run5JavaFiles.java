@@ -11,7 +11,7 @@ public class run5JavaFiles {
     String path = "examples/locoGP/";
     String[] files = {"SortBubbleDouble.java"};
                         // "SortBubbleLoops.java", 
-                        // "SortInsertion.java"};
+                        // "SortInsertion.java",
                         // "SortCocktail.java",
                         // "SortHeap.java"};
 

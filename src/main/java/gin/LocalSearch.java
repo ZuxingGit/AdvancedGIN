@@ -10,7 +10,7 @@ import gin.automation.run5JavaFiles;
 public class LocalSearch {
 
     private static final int seed = 5678;
-    private static final int NUM_STEPS = 100;
+    private static final int NUM_STEPS = 10;
     private static final int WARMUP_REPS = 10;
 
     protected SourceFile sourceFile;

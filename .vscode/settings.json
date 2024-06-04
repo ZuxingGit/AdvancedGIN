@@ -1,9 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "src/test/java",
         "src/main/java",
-        "tmp",
-        "examples/locoGP"
+        "src/test/java"
     ],
     "java.project.referencedLibraries": [
         "/Users/wzx/Development/AdvancedGIN/lib/junit-4.12.jar",
