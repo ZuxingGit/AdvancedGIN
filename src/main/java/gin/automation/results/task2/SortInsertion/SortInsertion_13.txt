@@ -1,17 +1,24 @@
-Initial execution time: 2274801.25 (ns) 
-Step 31 | DEL 8 |*** New best *** Time: 1880040.0(ns)
-Step 33 | DEL 8 | COPY 2 -> 0:2 |*** New best *** Time: 1876144.0(ns)
-Step 39 | DEL 8 |*** New best *** Time: 1729046.0(ns)
-Step 109 | DEL 8 | MOVE 7 -> 2:0 |*** New best *** Time: 1407725.0(ns)
-Step 123 | DEL 8 |*** New best *** Time: 1371212.0(ns)
-Step 199 | DEL 8 | MOVE 9 -> 1:2 |*** New best *** Time: 1361608.0(ns)
-Step 200 | DEL 8 |*** New best *** Time: 1204261.0(ns)
-Step 317 | DEL 8 | COPY 8 -> 2:0 |*** New best *** Time: 843080.0(ns)
-Step 338 | DEL 8 |*** New best *** Time: 811744.0(ns)
-Step 886 | DEL 8 | COPY 4 -> 1:1 |*** New best *** Time: 644342.0(ns)
-Step 898 | DEL 8 |*** New best *** Time: 632308.0(ns)
+Initial execution time: 1.362595E7 (ns) 
+Step 1 | DEL 8 |*** New best *** Time: 2665798.0(ns)
+Step 37 | DEL 8 | COPY 4 -> 1:1 |*** New best *** Time: 1843395.0(ns)
+Step 40 | DEL 8 |*** New best *** Time: 1600992.0(ns)
+Step 96 | DEL 8 | COPY 4 -> 1:0 |*** New best *** Time: 1500212.0(ns)
+Step 102 | DEL 8 |*** New best *** Time: 1445732.0(ns)
+Step 137 | DEL 8 | COPY 9 -> 2:0 |*** New best *** Time: 1373546.0(ns)
+Step 140 | DEL 8 |*** New best *** Time: 1212363.0(ns)
+Step 219 | DEL 8 | MOVE 7 -> 2:1 |*** New best *** Time: 1166548.0(ns)
+Step 222 | DEL 8 |*** New best *** Time: 1138004.0(ns)
+Step 224 | DEL 8 | MOVE 9 -> 1:2 |*** New best *** Time: 1099969.0(ns)
+Step 299 | DEL 8 |*** New best *** Time: 1090441.0(ns)
+Step 452 | DEL 8 | COPY 6 -> 2:0 |*** New best *** Time: 1046846.0(ns)
+Step 453 | DEL 8 |*** New best *** Time: 1014643.0(ns)
+Step 514 | DEL 8 | MOVE 10 -> 0:2 |*** New best *** Time: 1004287.0(ns)
+Step 518 | DEL 8 |*** New best *** Time: 984437.0(ns)
+Step 544 | DEL 8 | COPY 4 -> 1:1 |*** New best *** Time: 982854.0(ns)
+Step 550 | DEL 8 |*** New best *** Time: 950656.0(ns)
+Step 625 | DEL 8 | MOVE 9 -> 1:2 |*** New best *** Time: 728277.0(ns)
 
-Best patch found: | DEL 8 |
-Found at step: 898
-Best execution time: 632308.0 (ns) 
-Speedup (%): 0.7220381341007264
+Best patch found: | DEL 8 | MOVE 9 -> 1:2 |
+Found at step: 625
+Best execution time: 728277.0 (ns) 
+Speedup (%): 0.9465522036995586

@@ -1,15 +1,24 @@
-Initial execution time: 2514331.5 (ns) 
-Step 55 | DEL 8 |*** New best *** Time: 1892953.0(ns)
-Step 73 | DEL 8 | MOVE 7 -> 2:1 |*** New best *** Time: 1599925.0(ns)
-Step 87 | DEL 8 |*** New best *** Time: 1534160.0(ns)
-Step 137 | DEL 8 | COPY 8 -> 2:0 |*** New best *** Time: 1277073.0(ns)
-Step 138 | DEL 8 |*** New best *** Time: 891555.0(ns)
-Step 459 | DEL 8 | COPY 6 -> 2:0 |*** New best *** Time: 891113.0(ns)
-Step 470 | DEL 8 |*** New best *** Time: 810062.0(ns)
-Step 702 | DEL 8 | COPY 7 -> 2:0 |*** New best *** Time: 729003.0(ns)
-Step 759 | DEL 8 |*** New best *** Time: 655131.0(ns)
+Initial execution time: 1.4005431E7 (ns) 
+Step 28 | DEL 8 |*** New best *** Time: 2474463.0(ns)
+Step 53 | DEL 8 | COPY 4 -> 1:0 |*** New best *** Time: 1761746.0(ns)
+Step 57 | DEL 8 |*** New best *** Time: 1689272.0(ns)
+Step 145 | DEL 8 | MOVE 7 -> 2:0 |*** New best *** Time: 1422191.0(ns)
+Step 146 | DEL 8 |*** New best *** Time: 1286744.0(ns)
+Step 190 | DEL 8 | COPY 2 -> 0:2 |*** New best *** Time: 1227762.0(ns)
+Step 192 | DEL 8 |*** New best *** Time: 1180452.0(ns)
+Step 249 | DEL 8 | MOVE 7 -> 2:0 |*** New best *** Time: 1159664.0(ns)
+Step 255 | DEL 8 |*** New best *** Time: 1117485.0(ns)
+Step 345 | DEL 8 | COPY 7 -> 2:1 |*** New best *** Time: 1112923.0(ns)
+Step 346 | DEL 8 |*** New best *** Time: 1081745.0(ns)
+Step 517 | DEL 8 | COPY 4 -> 1:1 |*** New best *** Time: 996300.0(ns)
+Step 529 | DEL 8 | COPY 4 -> 1:1 | DEL 4 |*** New best *** Time: 995958.0(ns)
+Step 619 | DEL 8 | COPY 4 -> 1:1 |*** New best *** Time: 992390.0(ns)
+Step 836 | DEL 8 |*** New best *** Time: 990420.0(ns)
+Step 911 | DEL 8 | MOVE 1 -> 0:0 |*** New best *** Time: 965448.0(ns)
+Step 945 | DEL 8 | MOVE 1 -> 0:0 | COPY 9 -> 1:2 |*** New best *** Time: 960020.0(ns)
+Step 953 | DEL 8 | MOVE 1 -> 0:0 |*** New best *** Time: 936143.0(ns)
 
-Best patch found: | DEL 8 |
-Found at step: 759
-Best execution time: 655131.0 (ns) 
-Speedup (%): 0.7394412789244378
+Best patch found: | DEL 8 | MOVE 1 -> 0:0 |
+Found at step: 953
+Best execution time: 936143.0 (ns) 
+Speedup (%): 0.9331585725566032

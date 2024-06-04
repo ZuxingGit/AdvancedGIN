@@ -1,18 +1,20 @@
-Initial execution time: 2623353.75 (ns) 
-Step 98 | DEL 8 |*** New best *** Time: 1896962.0(ns)
-Step 232 | DEL 8 | COPY 7 -> 2:0 |*** New best *** Time: 1419193.0(ns)
-Step 233 | DEL 8 |*** New best *** Time: 1319078.0(ns)
-Step 268 | DEL 8 | COPY 9 -> 1:2 |*** New best *** Time: 1277967.0(ns)
-Step 271 | DEL 8 | COPY 9 -> 1:2 | MOVE 7 -> 2:0 |*** New best *** Time: 1221333.0(ns)
-Step 272 | DEL 8 | COPY 9 -> 1:2 |*** New best *** Time: 1083374.0(ns)
-Step 275 | DEL 8 |*** New best *** Time: 1025224.0(ns)
-Step 517 | DEL 8 | COPY 2 -> 0:2 |*** New best *** Time: 716276.0(ns)
-Step 524 | DEL 8 |*** New best *** Time: 711884.0(ns)
-Step 674 | DEL 8 | COPY 9 -> 2:0 |*** New best *** Time: 708046.0(ns)
-Step 687 | DEL 8 |*** New best *** Time: 684570.0(ns)
-Step 964 | DEL 8 | COPY 2 -> 0:2 |*** New best *** Time: 672534.0(ns)
+Initial execution time: 7056195.75 (ns) 
+Step 23 | DEL 8 |*** New best *** Time: 2125129.0(ns)
+Step 121 | DEL 8 | MOVE 4 -> 1:0 |*** New best *** Time: 1480057.0(ns)
+Step 122 | DEL 8 |*** New best *** Time: 1313406.0(ns)
+Step 238 | DEL 8 | MOVE 4 -> 1:1 |*** New best *** Time: 1249448.0(ns)
+Step 244 | DEL 8 |*** New best *** Time: 1223991.0(ns)
+Step 246 | DEL 8 | COPY 6 -> 2:0 |*** New best *** Time: 1212832.0(ns)
+Step 247 | DEL 8 |*** New best *** Time: 1118771.0(ns)
+Step 564 | DEL 8 | MOVE 10 -> 0:2 |*** New best *** Time: 1038568.0(ns)
+Step 567 | DEL 8 |*** New best *** Time: 1013283.0(ns)
+Step 581 | DEL 8 | MOVE 9 -> 1:2 |*** New best *** Time: 984177.0(ns)
+Step 588 | DEL 8 |*** New best *** Time: 978965.0(ns)
+Step 779 | DEL 8 | COPY 4 -> 1:0 |*** New best *** Time: 947028.0(ns)
+Step 782 | DEL 8 | COPY 4 -> 1:0 | COPY 7 -> 2:1 |*** New best *** Time: 929637.0(ns)
+Step 919 | DEL 8 | COPY 4 -> 1:0 |*** New best *** Time: 710602.0(ns)
 
-Best patch found: | DEL 8 | COPY 2 -> 0:2 |
-Found at step: 964
-Best execution time: 672534.0 (ns) 
-Speedup (%): 0.7436357944482326
+Best patch found: | DEL 8 | COPY 4 -> 1:0 |
+Found at step: 919
+Best execution time: 710602.0 (ns) 
+Speedup (%): 0.8992938935969853
