@@ -1,12 +1,31 @@
-Initial execution time: 3882330.75 (ns) 
-Step 2 | COPY 46 -> 4:0 |*** New best *** Time: 2910445.0(ns)
-Step 6 |*** New best *** Time: 2362849.0(ns)
-Step 67 | COPY 15 -> 16:0 |*** New best *** Time: 2110140.0(ns)
-Step 72 |*** New best *** Time: 2054747.0(ns)
-Step 73 | MOVE 48 -> 10:3 |*** New best *** Time: 1962384.0(ns)
-Step 75 |*** New best *** Time: 1891502.0(ns)
+Initial execution time: 6003670.25 (ns) 
+Step 7 | MOVE 46 -> 3:0 |*** New best *** Time: 2881778.0(ns)
+Step 13 | MOVE 46 -> 3:0 | COPY 40 -> 8:0 |*** New best *** Time: 2471451.0(ns)
+Step 14 | COPY 40 -> 8:0 |*** New best *** Time: 2375588.0(ns)
+Step 38 |*** New best *** Time: 2070185.0(ns)
+Step 76 | MOVE 46 -> 10:0 |*** New best *** Time: 1773820.0(ns)
+Step 81 |*** New best *** Time: 1768274.0(ns)
+Step 130 | DEL 23 |*** New best *** Time: 1712500.0(ns)
+Step 134 |*** New best *** Time: 1633417.0(ns)
+Step 153 | COPY 13 -> 3:0 |*** New best *** Time: 1545277.0(ns)
+Step 158 | COPY 13 -> 3:0 | COPY 9 -> 12:0 |*** New best *** Time: 1485012.0(ns)
+Step 186 | COPY 9 -> 12:0 |*** New best *** Time: 1449944.0(ns)
+Step 198 |*** New best *** Time: 1395951.0(ns)
+Step 230 | DEL 46 |*** New best *** Time: 1300676.0(ns)
+Step 243 |*** New best *** Time: 1277956.0(ns)
+Step 277 | COPY 10 -> 6:0 |*** New best *** Time: 1237800.0(ns)
+Step 289 |*** New best *** Time: 1226436.0(ns)
+Step 348 | MOVE 10 -> 3:0 |*** New best *** Time: 1196349.0(ns)
+Step 352 |*** New best *** Time: 1190502.0(ns)
+Step 380 | COPY 14 -> 6:0 |*** New best *** Time: 1188725.0(ns)
+Step 411 |*** New best *** Time: 1169425.0(ns)
+Step 635 | DEL 23 |*** New best *** Time: 1162688.0(ns)
+Step 639 |*** New best *** Time: 1153311.0(ns)
+Step 755 | COPY 42 -> 5:0 |*** New best *** Time: 1129159.0(ns)
+Step 805 |*** New best *** Time: 1127601.0(ns)
+Step 990 | COPY 42 -> 4:0 |*** New best *** Time: 1113714.0(ns)
 
-Best patch found: |
-Found at step: 75
-Best execution time: 1891502.0 (ns) 
-Speedup (%): 0.5127921545581865
+Best patch found: | COPY 42 -> 4:0 |
+Found at step: 990
+Best execution time: 1113714.0 (ns) 
+Speedup (%): 0.8144944752753535

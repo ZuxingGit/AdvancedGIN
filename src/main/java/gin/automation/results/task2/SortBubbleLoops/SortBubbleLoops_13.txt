@@ -1,10 +1,25 @@
-Initial execution time: 2324680.0 (ns) 
-Step 31 | COPY 5 -> 0:0 |*** New best *** Time: 2211864.0(ns)
-Step 37 |*** New best *** Time: 1953619.0(ns)
-Step 63 | MOVE 7 -> 3:0 |*** New best *** Time: 1572479.0(ns)
-Step 67 |*** New best *** Time: 1472536.0(ns)
+Initial execution time: 2314239.0 (ns) 
+Step 38 | COPY 4 -> 1:0 |*** New best *** Time: 2100342.0(ns)
+Step 40 |*** New best *** Time: 2022851.0(ns)
+Step 49 | COPY 5 -> 0:1 |*** New best *** Time: 1980779.0(ns)
+Step 53 |*** New best *** Time: 1929485.0(ns)
+Step 77 | COPY 2 -> 0:1 |*** New best *** Time: 1863100.0(ns)
+Step 82 | COPY 2 -> 0:1 | DEL 1 |*** New best *** Time: 1750055.0(ns)
+Step 88 | COPY 2 -> 0:1 | DEL 1 | DEL 11 |*** New best *** Time: 1624181.0(ns)
+Step 109 | COPY 2 -> 0:1 | DEL 1 |*** New best *** Time: 1458380.0(ns)
+Step 155 | COPY 2 -> 0:1 | DEL 1 | COPY 6 -> 2:0 |*** New best *** Time: 1439988.0(ns)
+Step 156 | COPY 2 -> 0:1 | DEL 1 |*** New best *** Time: 1426158.0(ns)
+Step 158 | COPY 2 -> 0:1 | DEL 1 | MOVE 10 -> 2:0 |*** New best *** Time: 1273301.0(ns)
+Step 193 | COPY 2 -> 0:1 | DEL 1 |*** New best *** Time: 1045104.0(ns)
+Step 288 | COPY 2 -> 0:1 | DEL 1 | COPY 3 -> 1:0 |*** New best *** Time: 907021.0(ns)
+Step 391 | COPY 2 -> 0:1 | DEL 1 | COPY 3 -> 1:0 | DEL 10 |*** New best *** Time: 871631.0(ns)
+Step 438 | COPY 2 -> 0:1 | DEL 1 | COPY 3 -> 1:0 | DEL 10 | COPY 6 -> 2:0 |*** New best *** Time: 826972.0(ns)
+Step 467 | COPY 2 -> 0:1 | DEL 1 | COPY 3 -> 1:0 | COPY 6 -> 2:0 |*** New best *** Time: 789748.0(ns)
+Step 477 | COPY 2 -> 0:1 | DEL 1 | COPY 3 -> 1:0 | COPY 6 -> 2:0 | COPY 8 -> 4:1 |*** New best *** Time: 780802.0(ns)
+Step 537 | COPY 2 -> 0:1 | DEL 1 | COPY 3 -> 1:0 | COPY 8 -> 4:1 |*** New best *** Time: 752336.0(ns)
+Step 558 | COPY 2 -> 0:1 | DEL 1 | COPY 3 -> 1:0 | COPY 8 -> 4:1 | COPY 8 -> 2:0 |*** New best *** Time: 745942.0(ns)
 
-Best patch found: |
-Found at step: 67
-Best execution time: 1472536.0 (ns) 
-Speedup (%): 0.36656400020648006
+Best patch found: | COPY 2 -> 0:1 | DEL 1 | COPY 3 -> 1:0 | COPY 8 -> 4:1 | COPY 8 -> 2:0 |
+Found at step: 558
+Best execution time: 745942.0 (ns) 
+Speedup (%): 0.677672876483371

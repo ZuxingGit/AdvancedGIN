@@ -1,17 +1,23 @@
-Initial execution time: 3702356.75 (ns) 
-Step 7 | MOVE 7 -> 3:1 |*** New best *** Time: 3282564.0(ns)
-Step 8 |*** New best *** Time: 3201122.0(ns)
-Step 11 | MOVE 17 -> 6:1 |*** New best *** Time: 3032858.0(ns)
-Step 15 | MOVE 17 -> 6:1 | DEL 18 |*** New best *** Time: 2747356.0(ns)
-Step 16 | DEL 18 |*** New best *** Time: 2439272.0(ns)
-Step 22 |*** New best *** Time: 2279048.0(ns)
-Step 44 | DEL 18 |*** New best *** Time: 2270646.0(ns)
-Step 46 | DEL 18 | MOVE 12 -> 6:2 |*** New best *** Time: 2169558.0(ns)
-Step 47 | DEL 18 | MOVE 12 -> 6:2 | COPY 9 -> 5:0 |*** New best *** Time: 2023134.0(ns)
-Step 67 | DEL 18 | MOVE 12 -> 6:2 |*** New best *** Time: 1971451.0(ns)
-Step 90 | DEL 18 |*** New best *** Time: 1916612.0(ns)
+Initial execution time: 2161060.75 (ns) 
+Step 36 | DEL 10 |*** New best *** Time: 1871660.0(ns)
+Step 44 | DEL 10 | DEL 14 |*** New best *** Time: 1766543.0(ns)
+Step 51 | DEL 10 |*** New best *** Time: 1740710.0(ns)
+Step 84 | DEL 10 | DEL 17 |*** New best *** Time: 1519189.0(ns)
+Step 111 | DEL 10 |*** New best *** Time: 1413456.0(ns)
+Step 144 |*** New best *** Time: 1236616.0(ns)
+Step 241 | DEL 3 |*** New best *** Time: 1227371.0(ns)
+Step 252 |*** New best *** Time: 1065329.0(ns)
+Step 388 | MOVE 14 -> 5:0 |*** New best *** Time: 1019354.0(ns)
+Step 389 |*** New best *** Time: 1016833.0(ns)
+Step 439 | DEL 3 |*** New best *** Time: 977226.0(ns)
+Step 468 | DEL 3 | DEL 8 |*** New best *** Time: 885998.0(ns)
+Step 491 | DEL 3 |*** New best *** Time: 823259.0(ns)
+Step 847 | DEL 3 | COPY 11 -> 3:1 |*** New best *** Time: 783604.0(ns)
+Step 851 | DEL 3 | COPY 11 -> 3:1 | COPY 12 -> 2:0 |*** New best *** Time: 783257.0(ns)
+Step 877 | DEL 3 | COPY 11 -> 3:1 |*** New best *** Time: 775120.0(ns)
+Step 949 | DEL 3 |*** New best *** Time: 769337.0(ns)
 
-Best patch found: | DEL 18 |
-Found at step: 90
-Best execution time: 1916612.0 (ns) 
-Speedup (%): 0.48232649379344655
+Best patch found: | DEL 3 |
+Found at step: 949
+Best execution time: 769337.0 (ns) 
+Speedup (%): 0.6440002901352958

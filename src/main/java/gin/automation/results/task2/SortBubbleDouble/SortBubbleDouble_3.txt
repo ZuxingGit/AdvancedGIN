@@ -1,9 +1,28 @@
-Initial execution time: 2279162.5 (ns) 
-Step 32 | MOVE 3 -> 3:2 |*** New best *** Time: 2221311.0(ns)
-Step 36 |*** New best *** Time: 2019406.0(ns)
-Step 79 | DEL 12 |*** New best *** Time: 1952249.0(ns)
+Initial execution time: 2278752.5 (ns) 
+Step 27 | MOVE 17 -> 3:2 |*** New best *** Time: 2151915.0(ns)
+Step 32 |*** New best *** Time: 2131616.0(ns)
+Step 44 | DEL 14 |*** New best *** Time: 2125301.0(ns)
+Step 45 |*** New best *** Time: 1963192.0(ns)
+Step 75 | MOVE 12 -> 5:0 |*** New best *** Time: 1702002.0(ns)
+Step 101 | MOVE 12 -> 5:0 | COPY 5 -> 5:0 |*** New best *** Time: 1664093.0(ns)
+Step 108 | MOVE 12 -> 5:0 |*** New best *** Time: 1629891.0(ns)
+Step 125 | MOVE 12 -> 5:0 | COPY 1 -> 5:0 |*** New best *** Time: 1544541.0(ns)
+Step 131 | MOVE 12 -> 5:0 | COPY 1 -> 5:0 | MOVE 3 -> 1:0 |*** New best *** Time: 1489240.0(ns)
+Step 163 | MOVE 12 -> 5:0 | COPY 1 -> 5:0 | MOVE 3 -> 1:0 | DEL 8 |*** New best *** Time: 1121920.0(ns)
+Step 341 | MOVE 12 -> 5:0 | COPY 1 -> 5:0 | MOVE 3 -> 1:0 |*** New best *** Time: 954691.0(ns)
+Step 481 | MOVE 12 -> 5:0 | MOVE 3 -> 1:0 |*** New best *** Time: 900372.0(ns)
+Step 482 | MOVE 12 -> 5:0 |*** New best *** Time: 890099.0(ns)
+Step 642 | MOVE 12 -> 5:0 | COPY 14 -> 5:0 |*** New best *** Time: 867815.0(ns)
+Step 656 | MOVE 12 -> 5:0 |*** New best *** Time: 846755.0(ns)
+Step 687 | MOVE 12 -> 5:0 | DEL 17 |*** New best *** Time: 828131.0(ns)
+Step 813 | MOVE 12 -> 5:0 |*** New best *** Time: 822817.0(ns)
+Step 907 | MOVE 12 -> 5:0 | COPY 13 -> 6:0 |*** New best *** Time: 802130.0(ns)
+Step 925 | MOVE 12 -> 5:0 |*** New best *** Time: 796472.0(ns)
+Step 928 | MOVE 12 -> 5:0 | MOVE 17 -> 3:2 |*** New best *** Time: 793681.0(ns)
+Step 929 | MOVE 12 -> 5:0 |*** New best *** Time: 785558.0(ns)
+Step 932 | MOVE 12 -> 5:0 | MOVE 14 -> 5:0 |*** New best *** Time: 784897.0(ns)
 
-Best patch found: | DEL 12 |
-Found at step: 79
-Best execution time: 1952249.0 (ns) 
-Speedup (%): 0.14343580152797356
+Best patch found: | MOVE 12 -> 5:0 | MOVE 14 -> 5:0 |
+Found at step: 932
+Best execution time: 784897.0 (ns) 
+Speedup (%): 0.6555584689429853

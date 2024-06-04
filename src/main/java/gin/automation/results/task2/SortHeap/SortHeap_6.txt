@@ -1,8 +1,35 @@
-Initial execution time: 2182940.25 (ns) 
-Step 36 | MOVE 41 -> 13:0 |*** New best *** Time: 2019092.0(ns)
-Step 38 |*** New best *** Time: 1935532.0(ns)
+Initial execution time: 6692068.75 (ns) 
+Step 2 | COPY 9 -> 13:0 |*** New best *** Time: 5489987.0(ns)
+Step 4 |*** New best *** Time: 2623419.0(ns)
+Step 8 | MOVE 46 -> 16:0 |*** New best *** Time: 2337300.0(ns)
+Step 13 | MOVE 46 -> 16:0 | COPY 40 -> 12:0 |*** New best *** Time: 2332682.0(ns)
+Step 18 | MOVE 46 -> 16:0 |*** New best *** Time: 2300753.0(ns)
+Step 22 |*** New best *** Time: 2080927.0(ns)
+Step 37 | COPY 10 -> 12:0 |*** New best *** Time: 1977156.0(ns)
+Step 40 |*** New best *** Time: 1863099.0(ns)
+Step 86 | COPY 42 -> 13:0 |*** New best *** Time: 1857822.0(ns)
+Step 96 |*** New best *** Time: 1678469.0(ns)
+Step 111 | DEL 49 |*** New best *** Time: 1589257.0(ns)
+Step 123 |*** New best *** Time: 1482539.0(ns)
+Step 196 | MOVE 46 -> 4:0 |*** New best *** Time: 1474791.0(ns)
+Step 200 |*** New best *** Time: 1291273.0(ns)
+Step 243 | DEL 50 |*** New best *** Time: 1287270.0(ns)
+Step 262 |*** New best *** Time: 1273892.0(ns)
+Step 285 | COPY 8 -> 13:0 |*** New best *** Time: 1243472.0(ns)
+Step 288 | COPY 8 -> 13:0 | COPY 24 -> 16:0 |*** New best *** Time: 1226431.0(ns)
+Step 292 | COPY 24 -> 16:0 |*** New best *** Time: 1181062.0(ns)
+Step 318 |*** New best *** Time: 1163792.0(ns)
+Step 423 | COPY 4 -> 0:3 |*** New best *** Time: 1122825.0(ns)
+Step 440 |*** New best *** Time: 1119142.0(ns)
+Step 443 | MOVE 42 -> 12:0 |*** New best *** Time: 1095908.0(ns)
+Step 475 | MOVE 42 -> 12:0 | COPY 5 -> 13:0 |*** New best *** Time: 1083590.0(ns)
+Step 512 | MOVE 42 -> 12:0 | COPY 5 -> 13:0 | COPY 37 -> 4:0 |*** New best *** Time: 1080340.0(ns)
+Step 522 | COPY 5 -> 13:0 | COPY 37 -> 4:0 |*** New best *** Time: 1072197.0(ns)
+Step 583 | COPY 5 -> 13:0 | COPY 37 -> 4:0 | COPY 37 -> 2:1 |*** New best *** Time: 1059495.0(ns)
+Step 616 | COPY 5 -> 13:0 | COPY 37 -> 4:0 | COPY 37 -> 2:1 | MOVE 41 -> 13:0 |*** New best *** Time: 1044769.0(ns)
+Step 655 | COPY 37 -> 4:0 | COPY 37 -> 2:1 | MOVE 41 -> 13:0 |*** New best *** Time: 1032097.0(ns)
 
-Best patch found: |
-Found at step: 38
-Best execution time: 1935532.0 (ns) 
-Speedup (%): 0.11333716073996987
+Best patch found: | COPY 37 -> 4:0 | COPY 37 -> 2:1 | MOVE 41 -> 13:0 |
+Found at step: 655
+Best execution time: 1032097.0 (ns) 
+Speedup (%): 0.8457731026747147
