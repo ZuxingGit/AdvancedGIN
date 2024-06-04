@@ -10,7 +10,7 @@ public class run5JavaFiles {
     /* 
     command sample:
     java -jar build/gin.jar examples/locoGP/SortCocktail.java | grep -E ".*(best|Initial)" > sc1.txt 
-
+    this part only works in command window: | grep -E ".*(best|Initial)" > sc1.txt 
     bestPatch.writePatchedSourceToFile(sourceFile.getFilename() + ".optimised");
     */
     String command = "java -jar build/gin.jar ";
@@ -23,13 +23,13 @@ public class run5JavaFiles {
         "SortBubbleLoops.java", 
         "SortInsertion.java", 
         "SortCocktail.java", 
-        "SortHeap.java" 
+        "SortHeap.java"
     */
+    // only run the first 4 files, SortHeap can cause program freeze
     String[] files = {"SortBubbleDouble.java", 
                         "SortBubbleLoops.java", 
                         "SortInsertion.java", 
-                        "SortCocktail.java", 
-                        "SortHeap.java" };
+                        "SortCocktail.java"};
 
     public static void main(String[] args) {
         new run5JavaFiles().runProgram();
