@@ -1,10 +1,30 @@
-Initial execution time: 2181313.0 (ns) 
-Step 43 | DEL 46 |*** New best *** Time: 2165321.0(ns)
-Step 52 |*** New best *** Time: 1898615.0(ns)
-Step 80 | MOVE 19 -> 1:1 |*** New best *** Time: 1860324.0(ns)
-Step 81 |*** New best *** Time: 1710578.0(ns)
+Initial execution time: 2954959.0 (ns) 
+Step 10 | MOVE 42 -> 12:0 |*** New best *** Time: 2398413.0(ns)
+Step 17 |*** New best *** Time: 2093779.0(ns)
+Step 32 | DEL 23 |*** New best *** Time: 2092098.0(ns)
+Step 37 |*** New best *** Time: 1912249.0(ns)
+Step 76 | COPY 38 -> 12:0 |*** New best *** Time: 1767802.0(ns)
+Step 80 |*** New best *** Time: 1762623.0(ns)
+Step 86 | COPY 11 -> 5:0 |*** New best *** Time: 1717824.0(ns)
+Step 89 | COPY 11 -> 5:0 | DEL 46 |*** New best *** Time: 1654429.0(ns)
+Step 104 | DEL 46 |*** New best *** Time: 1649130.0(ns)
+Step 125 |*** New best *** Time: 1466464.0(ns)
+Step 261 | COPY 42 -> 8:0 |*** New best *** Time: 1335041.0(ns)
+Step 281 |*** New best *** Time: 1313357.0(ns)
+Step 309 | DEL 22 |*** New best *** Time: 1265837.0(ns)
+Step 355 |*** New best *** Time: 1210062.0(ns)
+Step 411 | DEL 50 |*** New best *** Time: 1192176.0(ns)
+Step 425 |*** New best *** Time: 1146568.0(ns)
+Step 512 | COPY 46 -> 5:0 |*** New best *** Time: 1113580.0(ns)
+Step 517 |*** New best *** Time: 1111239.0(ns)
+Step 540 | COPY 35 -> 13:0 |*** New best *** Time: 1104206.0(ns)
+Step 547 |*** New best *** Time: 1092770.0(ns)
+Step 599 | DEL 22 |*** New best *** Time: 1074931.0(ns)
+Step 686 |*** New best *** Time: 1070566.0(ns)
+Step 690 | DEL 49 |*** New best *** Time: 1048260.0(ns)
+Step 695 |*** New best *** Time: 1027502.0(ns)
 
 Best patch found: |
-Found at step: 81
-Best execution time: 1710578.0 (ns) 
-Speedup (%): 0.21580350917085261
+Found at step: 695
+Best execution time: 1027502.0 (ns) 
+Speedup (%): 0.6522787625818158
