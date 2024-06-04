@@ -25,8 +25,10 @@ public class Run5JavaFiles {
         "SortCocktail.java", 
         "SortHeap.java"
     */
-    // only run the first 4 files, SortHeap can cause program freeze
-    String[] files = {"SortBubbleDouble.java"};
+    // only run the first 4 files, SortHeap can cause program freeze. Damn it.
+    String[] files = {"SortBubbleDouble.java", 
+                    "SortInsertion.java", 
+                    "SortCocktail.java"};
 
     public static void main(String[] args) {
         new Run5JavaFiles().runProgram();
@@ -47,6 +49,7 @@ public class Run5JavaFiles {
                     // show output in terminal
                     BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
                     String line;
+                    boolean has2Edits = true;
                     StringBuilder output = new StringBuilder();
                     while ((line = reader.readLine()) != null) {
                         // contains keywords
@@ -57,9 +60,20 @@ public class Run5JavaFiles {
                         } else if (line.contains("Best patch")) {
                             System.out.println("\n" + line); // print to terminal
                             output.append("\n" + line + "\n"); // save to output
+                            // if line has less than 3 '|', it means the best patch has <2 edits
+                            if (line.split("\\|").length < 3) {
+                                has2Edits = false;
+                                System.out.println("Best patch has less than 2 edits, discard this round.");
+                                break;
+                            }
                         }
                     }
                     reader.close();
+                    // if best patch has less than 2 edits, discard this round
+                    if (!has2Edits) {
+                        i--;
+                        continue;
+                    }
                     // save output to .txt file
                     saveOutputToFile(output.toString(), programName, String.valueOf(i + 1));
 
