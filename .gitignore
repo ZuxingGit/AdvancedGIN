@@ -11,3 +11,4 @@
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .gradle/buildOutputCleanup/cache.properties
 .gradle/vcs-1/gc.properties
+src/main/java/gin/automation/Run.java

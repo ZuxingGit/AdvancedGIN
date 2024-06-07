@@ -6,7 +6,6 @@ public class SortHeap {
             int maxchild, temp, child, root = i, bottom = array_size - 1;
             while (root * 2 < bottom) {
                 child = root * 2 + 1;
-                temp = a[root];
                 if (child == bottom) {
                     maxchild = child;
                 } else {
@@ -48,7 +47,6 @@ public class SortHeap {
                     a[root] = a[maxchild];
                     a[maxchild] = temp;
                 } else {
-                    child = root * 2 + 1;
                     break;
                 }
                 root = maxchild;
