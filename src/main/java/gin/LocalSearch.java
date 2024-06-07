@@ -1,5 +1,6 @@
 package gin;
 
+import java.io.File;
 import java.util.Random;
 
 /**
@@ -15,18 +16,40 @@ public class LocalSearch {
     protected TestRunner testRunner;
     protected Random rng;
 
+    private static boolean saveEachBest = false;
+    private static String fileName = "";
     /**
      * Main method. Take a source code filename, instantiate a search instance and execute the search.
      * @param args A single source code filename, .java
      */
     public static void main(String[] args) {
-
+        System.out.println(args.length);
         if (args.length == 0) {
             System.out.println("Please specify a source file to optimise.");
-        } else {
+        } else if (args.length == 1) {
             String sourceFilename = args[0];
             System.out.println("Optimising source file: " + sourceFilename + "\n");
 
+            LocalSearch localSearch = new LocalSearch(sourceFilename);
+            localSearch.search();
+        } else if (args.length == 3) {
+            String sourceFilename = args[0];
+            String programName = args[1];
+            String folderPath = args[2];
+            // System.out.println("programName: " + programName + ", folderPath: " + folderPath + "\n");
+            saveEachBest = true;
+            fileName = folderPath + programName;
+            // check folder, if exists, delete all files in the folder
+            File folder = new File(folderPath);
+            if (folder.exists()) {
+                File[] files = folder.listFiles();
+                for (File file : files) {
+                    file.delete();
+                }
+            }
+        
+            System.out.println("Optimising source file: " + sourceFilename + "\n");
+        
             LocalSearch localSearch = new LocalSearch(sourceFilename);
             localSearch.search();
         }
@@ -90,6 +113,9 @@ public class LocalSearch {
                 bestTime = testResult.executionTime;
                 bestStep = step;
                 System.out.println("*** New best *** Time: " + bestTime + "(ns)");
+                if (saveEachBest) {
+                    bestPatch.writePatchedSourceToFile(fileName + ".optimised_" + step);
+                }
             } else {
                 System.out.println("Time: " + testResult.executionTime);
             }
