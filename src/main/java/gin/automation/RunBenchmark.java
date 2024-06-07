@@ -7,6 +7,8 @@ import java.io.FileWriter;
 import java.io.InputStreamReader;
 
 /**
+ * Run the benchmark program 15 times and save the outputs
+ * @benchmark SortBubbleLoops.java
  * @author Zuxing
  */
 public class RunBenchmark {
