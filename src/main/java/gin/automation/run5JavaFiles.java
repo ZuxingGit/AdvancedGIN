@@ -6,10 +6,13 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 
+/**
+ * @author Zuxing
+ */
 public class Run5JavaFiles {
     /* 
     command sample:
-    java -jar build/gin.jar examples/locoGP/SortCocktail.java | grep -E ".*(best|Initial)" > sc1.txt 
+    java -jar build/gin.jar examples/locoGP/SortCocktail.java 
     this part only works in command window: | grep -E ".*(best|Initial)" > sc1.txt 
     bestPatch.writePatchedSourceToFile(sourceFile.getFilename() + ".optimised");
     */
@@ -25,10 +28,11 @@ public class Run5JavaFiles {
         "SortCocktail.java", 
         "SortHeap.java"
     */
-    // only run the first 4 files, SortHeap can cause program freeze. Damn it.
-    String[] files = {"SortBubbleDouble.java", 
-                    "SortInsertion.java", 
-                    "SortCocktail.java"};
+    // only run the first 3 files, SortHeap can cause program freeze. Damn it
+    // SortCocktail is hopeless, ignore it
+    String[] files = {"SortBubbleDouble.java",
+                    "SortBubbleLoops.java",
+                    "SortInsertion.java"};
 
     public static void main(String[] args) {
         new Run5JavaFiles().runProgram();
@@ -38,7 +42,7 @@ public class Run5JavaFiles {
         System.out.println(parentDir);
         Runtime runtime = Runtime.getRuntime();
         for (String file : files) {
-            String commandString = command + path + file + suffix1;
+            String commandString = command + path + file;
             System.out.println(commandString);
             String programName = file.replace(".java", "");
             // run the command 15 times
@@ -58,14 +62,14 @@ public class Run5JavaFiles {
                             System.out.println(line); // print to terminal
                             output.append(line + "\n"); // save to output
                         } else if (line.contains("Best patch")) {
-                            System.out.println("\n" + line); // print to terminal
-                            output.append("\n" + line + "\n"); // save to output
                             // if line has less than 3 '|', it means the best patch has <2 edits
                             if (line.split("\\|").length < 3) {
                                 has2Edits = false;
                                 System.out.println("Best patch has less than 2 edits, discard this round.");
                                 break;
                             }
+                            System.out.println("\n" + line); // print to terminal
+                            output.append("\n" + line + "\n"); // save to output
                         }
                     }
                     reader.close();
