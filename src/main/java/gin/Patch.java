@@ -80,12 +80,13 @@ public class Patch {
         List<Statement> toDelete = new LinkedList<>();
         List<Insertion> insertions = new LinkedList<>();
 
-
+        boolean removedOK = true;
         for (Edit edit: edits) {
 
             if (edit instanceof DeleteStatement) {
 
-                toDelete.add(allStatements.get(((DeleteStatement)edit).statementToDelete));
+                // toDelete.add(allStatements.get(((DeleteStatement)edit).statementToDelete));
+                removedOK &= allStatements.get(((DeleteStatement)edit).statementToDelete).remove();
 
             } else if (edit instanceof MoveStatement) {
 
@@ -101,8 +102,12 @@ public class Patch {
                 }
 
                 Insertion insertion = new Insertion(source, targetStatementIndex, parent);
-                insertions.add(insertion);
-                toDelete.add(allStatements.get(((MoveStatement)edit).sourceStatement));
+                // insertions.add(insertion);
+                source = insertion.statementToInsert.clone();
+                insertion.insertionPointParent.addStatement(insertion.insertionPoint, source);
+
+                // toDelete.add(allStatements.get(((MoveStatement)edit).sourceStatement));
+                removedOK &= allStatements.get(((MoveStatement)edit).sourceStatement).remove();
 
             } else if (edit instanceof CopyStatement) {
 
@@ -118,21 +123,22 @@ public class Patch {
                 }
 
                 Insertion insertion = new Insertion(source, targetStatementIndex, parent);
-                insertions.add(insertion);
-
+                // insertions.add(insertion);
+                source = insertion.statementToInsert.clone();
+                insertion.insertionPointParent.addStatement(insertion.insertionPoint, source);
             }
 
         }
 
-        for (Insertion insertion: insertions) {
-            Statement source = insertion.statementToInsert.clone();
-            insertion.insertionPointParent.addStatement(insertion.insertionPoint, source);
-        }
+        // for (Insertion insertion: insertions) {
+        //     Statement source = insertion.statementToInsert.clone();
+        //     insertion.insertionPointParent.addStatement(insertion.insertionPoint, source);
+        // }
 
-        boolean removedOK = true;
-        for (Statement statement: toDelete) {
-            removedOK &= statement.remove(); // Not guaranteed to work if violate some constraints.
-        }
+        // // boolean removedOK = true;
+        // for (Statement statement: toDelete) {
+        //     removedOK &= statement.remove(); // Not guaranteed to work if violate some constraints.
+        // }
 
         if (removedOK) {
             return new SourceFile(patchedCompilationUnit);
