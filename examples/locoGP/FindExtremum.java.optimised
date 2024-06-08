@@ -14,11 +14,13 @@ public class FindExtremum {
             }
             if (min == max) {
             }
-            if (min < max) {
+            if (min > max) {
+                for (int i = 0; i < 1024; i++) {
+                    for (int j = 0; j < 10; j++) {
+                    }
+                }
             }
         }
-        Integer[] res = new Integer[2];
-        res[1] = max;
         return new Integer[] { min, max };
     }
 }

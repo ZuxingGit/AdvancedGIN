@@ -13,24 +13,33 @@ public class FindExtremum {
       }
 
       if (min == max) {
-        for (int i = 0; i < nums.length; i++) {
-          int random = new Random().nextInt();
+        for (int i = 0; i < 1024; i++) {
+          for (int j = 0; j < 10; j++) {
+            int random = new Random().nextInt() + 1;
+          }
         }
       }
       if (min < max) {
-        for (int i = 0; i < nums.length; i++) {
-          int random = new Random().nextInt();
+        for (int i = 0; i < 1024; i++) {
+          for (int j = 0; j < 10; j++) {
+            int random = new Random().nextInt() - 1;
+          }
         }
       }
       if (min > max) {
-        for (int i = 0; i < nums.length; i++) {
-          int random = new Random().nextInt();
+        for (int i = 0; i < 1024; i++) {
+          for (int j = 0; j < 10; j++) {
+            int random = new Random().nextInt() * 2;
+          }
         }
       }
     }
-    Integer[] res = new Integer[2];
-    res[0] = min;
-    res[1] = max;
+    for (int i = 0; i < 1024; i++) {
+      Integer[] res = new Integer[2];
+      res[0] = min;
+      res[1] = max;
+    }
+
     return new Integer[] { min, max };
   }
 }
