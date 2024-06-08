@@ -23,7 +23,7 @@ public class LocalSearch {
      * @param args A single source code filename, .java
      */
     public static void main(String[] args) {
-        System.out.println(args.length);
+        // System.out.println(args.length);
         if (args.length == 0) {
             System.out.println("Please specify a source file to optimise.");
         } else if (args.length == 1) {
