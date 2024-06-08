@@ -10,6 +10,8 @@ public class SortBubbleLoops {
                 }
             }
         }
+        for (int h = 2; h > 0; h--) {
+        }
         return a;
     }
 }
