@@ -9,7 +9,7 @@ import java.util.Random;
 public class LocalSearch {
 
     private static final int seed = 5678;
-    private static final int NUM_STEPS = 1000;
+    private static final int NUM_STEPS = 1;
     private static final int WARMUP_REPS = 10;
 
     protected SourceFile sourceFile;
