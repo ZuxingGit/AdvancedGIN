@@ -4,6 +4,7 @@ public class FindExtremum {
 
     public static Integer[] findExtremum(Integer[] nums) {
         Integer min = Integer.MAX_VALUE;
+        Integer max = Integer.MIN_VALUE;
         for (int num : nums) {
             if (num < min) {
                 min = num;

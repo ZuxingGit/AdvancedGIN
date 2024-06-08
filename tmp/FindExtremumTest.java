@@ -1,7 +1,7 @@
 import static org.junit.Assert.*;
 import java.util.Arrays;
 
-public class FindExtremum {
+public class FindExtremumTest {
     Integer[][] testArrSet = { { 2, 1 }, // This will test for a swap only
 			{ 2, 3, 1 }, { 1, 2, 3 }, { 1, 939, 950, 520, 3346, 3658, 2335, 6174, 2377, 796 },
 			{ 1000024, 999927, 999849, 999761, 999650, 999576, 999422, 999378, 999276, 999144 }, // reverse
@@ -17,8 +17,8 @@ public class FindExtremum {
 		for (int i = 0; i < testArrSet.length; i++) {
 			Integer[] clonedTestArr = testArrSet[i].clone();
 			Arrays.sort(clonedTestArr);
-			extremumArray res = new Integer[] { clonedTestArr[0], clonedTestArr[clonedTestArr.length - 1]};
-			sortedArraySet[i] = clonedTestArr;
+			Integer[] res = new Integer[] { clonedTestArr[0], clonedTestArr[clonedTestArr.length - 1]};
+			sortedArraySet[i] = res;
 		}
 		return sortedArraySet;
 	}
@@ -31,6 +31,8 @@ public class FindExtremum {
 
 	private void testSortAtIndex(int sortArrIndex) {
 		Integer[] sortingAttempt = testSpecificSort(testArrSet[sortArrIndex].clone());
+		// System.out.println("sortingAttempt: " + Arrays.toString(sortingAttempt));
+		// System.out.println("expectedArrSet: " + Arrays.toString(expectedArrSet[sortArrIndex]));
 		assertArrayEquals(expectedArrSet[sortArrIndex], sortingAttempt);
 	}
 
