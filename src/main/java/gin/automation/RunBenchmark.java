@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 
 /**
  * Run the benchmark program 15 times and save the outputs
- * @benchmark SortBubbleLoops.java
+ * @benchmark {@code SortBubbleLoops.java}
  * @author Zuxing
  */
 public class RunBenchmark {

@@ -22,6 +22,6 @@ public class RunByCode {
         // LocalSearch.main(program3);
         // LocalSearch.main(program4);
         // LocalSearch.main(program5);
-        LocalSearch.main(task5Program);         
+        // LocalSearch.main(task5Program);         
     }
 }

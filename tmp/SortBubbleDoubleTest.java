@@ -1,8 +1,9 @@
 import static org.junit.Assert.*;
 import java.util.Arrays;
 
-public class FindExtremumTest {
-    Integer[][] testArrSet = { { 2, 1 }, // This will test for a swap only
+public class SortBubbleDoubleTest {
+
+	Integer[][] testArrSet = { { 2, 1 }, // This will test for a swap only
 			{ 2, 3, 1 }, { 1, 2, 3 }, { 1, 939, 950, 520, 3346, 3658, 2335, 6174, 2377, 796 },
 			{ 1000024, 999927, 999849, 999761, 999650, 999576, 999422, 999378, 999276, 999144 }, // reverse
 			{ -1935783155, 805693102, 1011599466, -368696979, 814152454, 1502428812, 1640419215, 879631257, -1555817806,
@@ -17,22 +18,19 @@ public class FindExtremumTest {
 		for (int i = 0; i < testArrSet.length; i++) {
 			Integer[] clonedTestArr = testArrSet[i].clone();
 			Arrays.sort(clonedTestArr);
-			Integer[] res = new Integer[] { clonedTestArr[0], clonedTestArr[clonedTestArr.length - 1]};
-			sortedArraySet[i] = res;
+			sortedArraySet[i] = clonedTestArr;
 		}
 		return sortedArraySet;
 	}
 
 	// protected abstract Integer[] testSpecificSort( Integer[] a, Integer
 	// length ); // nein
-	protected Integer[] testSpecificSort(Integer[] a) {
-		return FindExtremum.findExtremum(a);
+	protected Integer[] testSpecificSort(Integer[] a, Integer length) {
+		return SortBubbleDouble.sort(a, length);
 	}
 
 	private void testSortAtIndex(int sortArrIndex) {
-		Integer[] sortingAttempt = testSpecificSort(testArrSet[sortArrIndex].clone());
-		// System.out.println("sortingAttempt: " + Arrays.toString(sortingAttempt));
-		// System.out.println("expectedArrSet: " + Arrays.toString(expectedArrSet[sortArrIndex]));
+		Integer[] sortingAttempt = testSpecificSort(testArrSet[sortArrIndex].clone(), testArrSet[sortArrIndex].length);
 		assertArrayEquals(expectedArrSet[sortArrIndex], sortingAttempt);
 	}
 
@@ -70,4 +68,5 @@ public class FindExtremumTest {
 	public void checkSorting6() throws Exception {
 		testSortAtIndex(6);
 	}
+
 }
