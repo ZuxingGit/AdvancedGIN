@@ -137,7 +137,8 @@ public class LocalSearch {
         }
 
         System.out.println("\nBest patch found: " + bestPatch);
-        // 1. Minimise the patch by removing one edit at a time and check if the result is the same as bestPatchCode
+        // 1. Minimise the patch by removing one edit at a time 
+        // and check if the result is the same as bestPatchCode
         bestPatch = minimisePatch(bestPatch, bestPatch.apply().getSource());
         // 2. iterate the bestPatchHistory to find a shorter patch that can generate the same result
         for (Entry<Patch, String> entry : bestPatchHistory.entrySet()) {
