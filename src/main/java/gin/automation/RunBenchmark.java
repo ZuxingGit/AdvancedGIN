@@ -43,6 +43,7 @@ public class RunBenchmark {
             System.out.println("===================round " + round + "===============================");
             String subFolder = "task3/".concat(programName).concat("/round").concat(round).concat("/");
             try {
+                System.out.println("Running command: " + commandString + " " + file + " " + outputPath + subFolder);
                 Process process = runtime.exec(commandString + " " + file + " " + outputPath + subFolder);
                 // show output in terminal
                 BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
@@ -57,11 +58,11 @@ public class RunBenchmark {
                         output.append(line + "\n"); // save to output
                     } else if (line.contains("Best patch")) {
                         // if line has less than 3 '|', it means the best patch has <2 edits
-                        if (line.split("\\|").length < 3) {
-                            has2Edits = false;
-                            System.out.println("Best patch has less than 2 edits, discard this round.");
-                            break;
-                        }
+                        // if (line.split("\\|").length < 3) {
+                        //     has2Edits = false;
+                        //     System.out.println("Best patch has less than 2 edits, discard this round.");
+                        //     break;
+                        // }
                         System.out.println("\n" + line); // print to terminal
                         output.append("\n" + line + "\n"); // save to output
                     } /* else {

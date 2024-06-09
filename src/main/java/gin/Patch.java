@@ -202,6 +202,14 @@ public class Patch {
 
     }
 
+    public LinkedList<Edit> getEdits() {
+        return edits;
+    }
+
+    public SourceFile getSourceFile() {
+        return sourceFile;
+    }
+    
     @Override
     public String toString() {
         String description = "| ";

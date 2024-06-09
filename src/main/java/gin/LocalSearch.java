@@ -1,7 +1,11 @@
 package gin;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Random;
+
+import gin.edit.Edit;
 
 /**
  * Simple local search.
@@ -9,7 +13,7 @@ import java.util.Random;
 public class LocalSearch {
 
     private static final int seed = 5678;
-    private static final int NUM_STEPS = 1;
+    private static final int NUM_STEPS = 1000;
     private static final int WARMUP_REPS = 10;
 
     protected SourceFile sourceFile;
@@ -83,11 +87,17 @@ public class LocalSearch {
 
         System.out.println("Initial execution time: " + bestTime + " (ns) \n");
 
+        HashMap<Patch, String> bestPatchHistory = new HashMap<>();
         for (int step = 1; step <= NUM_STEPS; step++) {
 
-            System.out.print("Step " + step + " ");
-
             Patch neighbour = neighbour(bestPatch, rng);
+            // if patch is: | , useless, re-generate a new patch
+            if (!containEnoughVB(neighbour.toString(), 1)) {
+                step--;
+                continue;
+            }
+
+            System.out.print("Step " + step + " ");
 
             System.out.print(neighbour);
 
@@ -113,9 +123,12 @@ public class LocalSearch {
                 bestTime = testResult.executionTime;
                 bestStep = step;
                 System.out.println("*** New best *** Time: " + bestTime + "(ns)");
+                // save every optimised code of bestPatch to a file (xxxx.optimised_step)
                 if (saveEachBest) {
                     bestPatch.writePatchedSourceToFile(fileName + ".optimised_" + step);
                 }
+                // save every best patch to a HashMap
+                bestPatchHistory.put(bestPatch, bestPatch.apply().getSource());
             } else {
                 System.out.println("Time: " + testResult.executionTime);
             }
@@ -123,6 +136,11 @@ public class LocalSearch {
         }
 
         System.out.println("\nBest patch found: " + bestPatch);
+        bestPatch = minimisePatch(bestPatch, bestPatch.apply().getSource());
+        if (saveEachBest) {
+            bestPatch.writePatchedSourceToFile(fileName + ".optimised_minimised");
+        }
+        System.out.println("Minimised best patch: " + bestPatch);
         System.out.println("Found at step: " + bestStep);
         System.out.println("Best execution time: " + bestTime + " (ns) ");
         System.out.println("Speedup (%): " + (origTime - bestTime)/origTime);
@@ -152,5 +170,46 @@ public class LocalSearch {
 
     }
 
+    /**
+     * Check if the patch contains enough Verticla Bar '|' e.g. 'VB
+     * @param patch content of the patch
+     * @param N threshold number of VB
+     * @return true if the patch contains enough VB
+     * @author Zuxing
+     */
+    public boolean containEnoughVB (String patch, int N) {
+        int count = 0;
+        for (int i = 0; i < patch.length(); i++) {
+            if (patch.charAt(i) == '|') {
+                count++;
+                if (count > N) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
+    public Patch minimisePatch(Patch bestPatch, String bestPatchCode) {
+        LinkedList<Edit> edits = bestPatch.getEdits();
+        int size = edits.size();
+        if (size == 1) { // only one edit, cannot minimize more
+            return bestPatch;
+        }
+        Patch newBestPatch = bestPatch.clone();
+        // delete one edit and check if result is the same as bestPatchCode
+        for (int i = 0; i < bestPatch.size(); i++) {
+            Patch newPatch = bestPatch.clone();
+            newPatch.remove(i);
+            String newPatchCode = newPatch.apply().getSource();
+            if (newPatchCode.equals(bestPatchCode)) {
+                // minimise the newPatch recursively
+                newPatch = minimisePatch(newPatch, bestPatchCode);
+                if (newPatch.size() < newBestPatch.size()) {
+                    newBestPatch = newPatch;
+                }
+            }
+        }
+        return newBestPatch;
+    }
 }
