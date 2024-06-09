@@ -3,6 +3,7 @@ package gin;
 import java.io.File;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map.Entry;
 import java.util.Random;
 
 import gin.edit.Edit;
@@ -136,7 +137,16 @@ public class LocalSearch {
         }
 
         System.out.println("\nBest patch found: " + bestPatch);
+        // 1. Minimise the patch by removing one edit at a time and check if the result is the same as bestPatchCode
         bestPatch = minimisePatch(bestPatch, bestPatch.apply().getSource());
+        // 2. iterate the bestPatchHistory to find a shorter patch that can generate the same result
+        for (Entry<Patch, String> entry : bestPatchHistory.entrySet()) {
+            Patch patch = entry.getKey();
+            String patchCode = entry.getValue();
+            if (patch.size() < bestPatch.size() && patchCode.equals(bestPatch.apply().getSource())) {
+                bestPatch = patch;
+            }
+        }
         if (saveEachBest) {
             bestPatch.writePatchedSourceToFile(fileName + ".optimised_minimised");
         }
@@ -190,6 +200,14 @@ public class LocalSearch {
         return false;
     }
 
+    /**
+     * Minimise the patch by removing one edit at a time and check if the result is the same as bestPatchCode
+     * If the result is the same, recursively minimise the new patch
+     * @param bestPatch
+     * @param bestPatchCode
+     * @return the minimised patch
+     * @author Zuxing
+     */
     public Patch minimisePatch(Patch bestPatch, String bestPatchCode) {
         LinkedList<Edit> edits = bestPatch.getEdits();
         int size = edits.size();
