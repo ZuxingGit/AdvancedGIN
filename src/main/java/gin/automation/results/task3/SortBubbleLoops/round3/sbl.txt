@@ -1,0 +1,28 @@
+Initial execution time: 2235005.75 (ns) 
+Step 12 | MOVE 10 -> 4:1 |*** New best *** Time: 2218102.0(ns)
+Step 96 | MOVE 10 -> 4:1 | COPY 4 -> 1:0 |*** New best *** Time: 1893007.0(ns)
+Step 100 | MOVE 10 -> 4:1 |*** New best *** Time: 1483305.0(ns)
+Step 245 | MOVE 10 -> 4:1 | COPY 6 -> 3:0 |*** New best *** Time: 1441929.0(ns)
+Step 257 | MOVE 10 -> 4:1 |*** New best *** Time: 1228719.0(ns)
+Step 291 | MOVE 10 -> 4:1 | MOVE 1 -> 0:1 |*** New best *** Time: 1154072.0(ns)
+Step 302 | MOVE 1 -> 0:1 |*** New best *** Time: 1119466.0(ns)
+Step 342 | MOVE 1 -> 0:1 | MOVE 3 -> 4:0 |*** New best *** Time: 1118470.0(ns)
+Step 381 | MOVE 1 -> 0:1 |*** New best *** Time: 1098266.0(ns)
+Step 401 | MOVE 1 -> 0:1 | DEL 10 |*** New best *** Time: 1080076.0(ns)
+Step 559 | MOVE 1 -> 0:1 | DEL 10 | COPY 12 -> 2:0 |*** New best *** Time: 1041627.0(ns)
+Step 574 | MOVE 1 -> 0:1 | DEL 10 | COPY 12 -> 2:0 | COPY 11 -> 3:0 |*** New best *** Time: 1033075.0(ns)
+Step 607 | MOVE 1 -> 0:1 | COPY 12 -> 2:0 | COPY 11 -> 3:0 |*** New best *** Time: 1030141.0(ns)
+Step 629 | MOVE 1 -> 0:1 | COPY 12 -> 2:0 | COPY 11 -> 3:0 | MOVE 3 -> 3:0 |*** New best *** Time: 1013775.0(ns)
+Step 640 | MOVE 1 -> 0:1 | COPY 12 -> 2:0 | COPY 11 -> 3:0 | MOVE 3 -> 3:0 | COPY 2 -> 1:0 |*** New best *** Time: 1004329.0(ns)
+Step 680 | MOVE 1 -> 0:1 | COPY 12 -> 2:0 | COPY 11 -> 3:0 | MOVE 3 -> 3:0 |*** New best *** Time: 999149.0(ns)
+Step 861 | MOVE 1 -> 0:1 | COPY 11 -> 3:0 | MOVE 3 -> 3:0 |*** New best *** Time: 998210.0(ns)
+Step 881 | MOVE 1 -> 0:1 | COPY 11 -> 3:0 | MOVE 3 -> 3:0 | COPY 8 -> 1:0 |*** New best *** Time: 990251.0(ns)
+Step 901 | MOVE 1 -> 0:1 | MOVE 3 -> 3:0 | COPY 8 -> 1:0 |*** New best *** Time: 981931.0(ns)
+Step 954 | MOVE 1 -> 0:1 | MOVE 3 -> 3:0 |*** New best *** Time: 971456.0(ns)
+Step 961 | MOVE 1 -> 0:1 | MOVE 3 -> 3:0 | DEL 11 |*** New best *** Time: 967608.0(ns)
+
+Best patch found: | MOVE 1 -> 0:1 | MOVE 3 -> 3:0 | DEL 11 |
+Minimised best patch: | MOVE 1 -> 0:1 |
+Found at step: 961
+Best execution time: 967608.0 (ns) 
+Speedup (%): 0.5670668856221064

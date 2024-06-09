@@ -1,0 +1,27 @@
+Initial execution time: 1734603.25 (ns) 
+Step 112 | COPY 7 -> 3:0 |*** New best *** Time: 1507336.0(ns)
+Step 116 | COPY 7 -> 3:0 | DEL 10 |*** New best *** Time: 1252163.0(ns)
+Step 136 | COPY 7 -> 3:0 |*** New best *** Time: 1168881.0(ns)
+Step 139 |*** New best *** Time: 1085893.0(ns)
+Step 265 | COPY 3 -> 0:0 |*** New best *** Time: 1040027.0(ns)
+Step 268 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 |*** New best *** Time: 873732.0(ns)
+Step 340 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 11 -> 2:0 |*** New best *** Time: 824032.0(ns)
+Step 350 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 11 -> 2:0 | COPY 0 -> 4:2 |*** New best *** Time: 821599.0(ns)
+Step 493 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 11 -> 2:0 |*** New best *** Time: 812305.0(ns)
+Step 495 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 11 -> 2:0 | DEL 7 |*** New best *** Time: 802874.0(ns)
+Step 510 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 11 -> 2:0 | DEL 7 | COPY 12 -> 3:0 |*** New best *** Time: 787462.0(ns)
+Step 512 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | DEL 7 | COPY 12 -> 3:0 |*** New best *** Time: 785323.0(ns)
+Step 534 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | DEL 7 | COPY 12 -> 3:0 | MOVE 11 -> 2:0 |*** New best *** Time: 775496.0(ns)
+Step 535 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | DEL 7 | COPY 12 -> 3:0 |*** New best *** Time: 767313.0(ns)
+Step 551 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 12 -> 3:0 |*** New best *** Time: 753107.0(ns)
+Step 588 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 12 -> 3:0 | DEL 11 |*** New best *** Time: 751487.0(ns)
+Step 593 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 12 -> 3:0 | DEL 11 | MOVE 10 -> 4:0 |*** New best *** Time: 743471.0(ns)
+Step 662 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 12 -> 3:0 | DEL 11 | MOVE 10 -> 4:0 | COPY 12 -> 1:0 |*** New best *** Time: 730408.0(ns)
+Step 812 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 12 -> 3:0 | DEL 11 | COPY 12 -> 1:0 |*** New best *** Time: 722125.0(ns)
+Step 829 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 12 -> 3:0 | COPY 12 -> 1:0 |*** New best *** Time: 718705.0(ns)
+Step 991 | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 12 -> 3:0 | COPY 12 -> 1:0 | COPY 9 -> 1:0 |*** New best *** Time: 704361.0(ns)
+
+Best patch found: | COPY 3 -> 0:0 | MOVE 1 -> 2:0 | COPY 12 -> 3:0 | COPY 12 -> 1:0 | COPY 9 -> 1:0 |
+Found at step: 991
+Best execution time: 704361.0 (ns) 
+Speedup (%): 0.5939353855125085

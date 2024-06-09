@@ -1,0 +1,29 @@
+Initial execution time: 2188804.0 (ns) 
+Step 64 | MOVE 3 -> 0:0 |*** New best *** Time: 1903523.0(ns)
+Step 67 | MOVE 3 -> 0:0 | COPY 7 -> 2:0 |*** New best *** Time: 1801053.0(ns)
+Step 68 | MOVE 3 -> 0:0 |*** New best *** Time: 1705715.0(ns)
+Step 73 | MOVE 3 -> 0:0 | COPY 0 -> 3:0 |*** New best *** Time: 1641354.0(ns)
+Step 74 | MOVE 3 -> 0:0 |*** New best *** Time: 1553831.0(ns)
+Step 85 | MOVE 3 -> 0:0 | COPY 2 -> 2:0 |*** New best *** Time: 1382758.0(ns)
+Step 129 | MOVE 3 -> 0:0 | COPY 2 -> 2:0 | DEL 10 |*** New best *** Time: 1361881.0(ns)
+Step 165 | MOVE 3 -> 0:0 | COPY 2 -> 2:0 | DEL 10 | COPY 2 -> 3:0 |*** New best *** Time: 1171134.0(ns)
+Step 224 | MOVE 3 -> 0:0 | COPY 2 -> 2:0 | DEL 10 | COPY 2 -> 3:0 | DEL 11 |*** New best *** Time: 1031442.0(ns)
+Step 230 | MOVE 3 -> 0:0 | COPY 2 -> 2:0 | DEL 10 | DEL 11 |*** New best *** Time: 1018243.0(ns)
+Step 288 | MOVE 3 -> 0:0 | COPY 2 -> 2:0 | DEL 11 |*** New best *** Time: 993821.0(ns)
+Step 308 | MOVE 3 -> 0:0 | DEL 11 |*** New best *** Time: 992315.0(ns)
+Step 321 | MOVE 3 -> 0:0 |*** New best *** Time: 986265.0(ns)
+Step 381 | MOVE 3 -> 0:0 | COPY 4 -> 2:0 |*** New best *** Time: 954729.0(ns)
+Step 408 | MOVE 3 -> 0:0 | COPY 4 -> 2:0 | DEL 1 |*** New best *** Time: 934549.0(ns)
+Step 497 | MOVE 3 -> 0:0 | COPY 4 -> 2:0 | DEL 1 | COPY 11 -> 2:0 |*** New best *** Time: 895585.0(ns)
+Step 552 | MOVE 3 -> 0:0 | DEL 1 | COPY 11 -> 2:0 |*** New best *** Time: 881797.0(ns)
+Step 559 | MOVE 3 -> 0:0 | DEL 1 | COPY 11 -> 2:0 | COPY 7 -> 4:1 |*** New best *** Time: 879350.0(ns)
+Step 578 | MOVE 3 -> 0:0 | DEL 1 | COPY 11 -> 2:0 | COPY 7 -> 4:1 | COPY 0 -> 1:0 |*** New best *** Time: 861719.0(ns)
+Step 623 | MOVE 3 -> 0:0 | DEL 1 | COPY 7 -> 4:1 | COPY 0 -> 1:0 |*** New best *** Time: 856181.0(ns)
+Step 701 | MOVE 3 -> 0:0 | DEL 1 | COPY 7 -> 4:1 |*** New best *** Time: 853013.0(ns)
+Step 807 | MOVE 3 -> 0:0 | COPY 7 -> 4:1 |*** New best *** Time: 852268.0(ns)
+
+Best patch found: | MOVE 3 -> 0:0 | COPY 7 -> 4:1 |
+Minimised best patch: | MOVE 3 -> 0:0 |
+Found at step: 807
+Best execution time: 852268.0 (ns) 
+Speedup (%): 0.6106238840937791
