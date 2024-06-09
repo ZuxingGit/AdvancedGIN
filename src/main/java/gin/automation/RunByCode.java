@@ -9,6 +9,7 @@ import gin.LocalSearch;
  */
 public class RunByCode {
     public static void main(String[] args) {
+        // one parameter run won't save results
         String[] program1 = new String[]{"examples/locoGP/SortBubbleDouble.java"};
         String[] program2 = new String[]{"examples/locoGP/SortBubbleLoops.java", "SortBubbleLoops.java", "src/main/java/gin/automation/results/task3/SortBubbleLoops/round0/"};
         String[] program3 = new String[]{"examples/locoGP/SortInsertion.java"};
@@ -17,10 +18,10 @@ public class RunByCode {
         String[] task5Program = new String[]{"examples/locoGP/FindExtremum.java"};
 
         // LocalSearch.main(program1);
-        LocalSearch.main(program2);
+        // LocalSearch.main(program2);
         // LocalSearch.main(program3);
         // LocalSearch.main(program4);
         // LocalSearch.main(program5);
-        // LocalSearch.main(task5Program);         
+        LocalSearch.main(task5Program);         
     }
 }
